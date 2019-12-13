@@ -1,0 +1,22 @@
+a[href*="#attrib-advanced"] {
+    display: none !important;
+}
+/* Esconde a identificacao do modulo na aba 'Modulos' */
+div#general hr,
+div#general .info-labels,
+div#general h3 {
+    display: none;
+}
+
+div#general hr{
+    display: none;
+}
+.popover-content {
+    word-wrap: break-word;
+}
+
+@media (min-width: 768px) {
+    .tab-content .control-group .control-label {
+      width: 160px !important;
+    }
+}

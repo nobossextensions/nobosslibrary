@@ -1,0 +1,63 @@
+@mixin site_generals{
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        -moz-osx-font-smoothing: grayscale;
+        font-feature-settings: 'liga';
+    }
+    a {
+        background-color: transparent;
+    }
+    a:active,
+    a:hover {
+        outline: 0;
+        color: inherit;
+    }
+    a {
+        color: #337ab7;
+        text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+        color: inherit;
+    }
+    a:focus {
+        outline: 5px auto -webkit-focus-ring-color;
+        outline-offset: -2px;
+    }
+    @media print {
+        *,
+        *:before,
+        *:after {
+            color: #000 !important;
+            text-shadow: none !important;
+            background: transparent !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+        }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
+        a[href]:after {
+            content: " (" attr(href) ")";
+        }
+        abbr[title]:after {
+            content: " (" attr(title) ")";
+        }
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
+    }
+}

@@ -1,0 +1,11 @@
+// estilo para adequar o tamanho do jquery-confirm no mobile 
+.modal-confirm-responsive{
+    width: 400px;
+    margin: auto;
+}
+@media(max-width: 768px){
+    .modal-confirm-responsive{
+        width: auto;
+        margin: 10px;
+    }    
+}

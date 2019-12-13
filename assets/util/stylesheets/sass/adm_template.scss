@@ -1,0 +1,16 @@
+/* Esconde a identificacao do modulo na aba 'Modulos' */
+div#details hr,
+div#details .info-labels,
+div#details h3,
+div#details .info-labels + div {
+
+    display: none;
+}
+
+div#details hr {
+    display: none;
+}
+
+.popover-content {
+    word-wrap: break-word;
+}
