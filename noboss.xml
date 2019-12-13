@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="3.5.0" type="library" method="upgrade">
+    <name>LIB_NOBOSS</name>
+    <description>LIB_NOBOSS_XML_DESCRIPTION</description>
+    <libraryname>noboss</libraryname>
+    <version>1.1.1</version>
+    <creationDate>November/2019</creationDate>
+    <author>No Boss Technology</author>
+    <authorEmail>contato@noboss.com.br</authorEmail>
+    <copyright>© 2019 No Boss Technology</copyright>
+    <license>GNU/LGPL license: http://www.gnu.org/licenses/lgpl-3.0.en.html</license>
+
+    <scriptfile>script.library.php</scriptfile>
+
+    <files>
+        <folder>assets</folder>
+        <folder>email</folder>
+        <folder>file</folder>
+        <folder>forms</folder>
+        <folder>language</folder>
+        <folder>util</folder>
+        <folder>layouts</folder>
+        <filename>noboss.xml</filename>
+        <filename>script.library.php</filename>
+    </files>
+
+    <languages>
+        <language tag="pt-BR">language/pt-BR/pt-BR.lib_noboss.sys.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.lib_noboss.sys.ini</language>
+        <language tag="fr-FR">language/fr-FR/fr-FR.lib_noboss.sys.ini</language>
+        <language tag="de-DE">language/de-DE/de-DE.lib_noboss.sys.ini</language>
+    </languages>
+
+    <updateservers>
+        <server type="extension" priority="1" name="LIB_NOBOSS">https://www.nobossextensions.com/repository/extras/nobosslibrary/xml.xml</server>
+    </updateservers>
+
+</extension>
