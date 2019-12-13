@@ -1,0 +1,27 @@
+/* line 1, ../sass/nobossmultipleinputs.scss */
+.nobossmultipleinputs__input {
+  display: inline-block;
+  padding: 0 10px;
+  margin-top: 6px;
+}
+
+/* line 6, ../sass/nobossmultipleinputs.scss */
+.nobossmultipleinputs__input * {
+  box-sizing: border-box;
+}
+
+/* line 10, ../sass/nobossmultipleinputs.scss */
+.nobossmultipleinputs__input input {
+  height: initial !important;
+}
+
+/* line 13, ../sass/nobossmultipleinputs.scss */
+.nobossmultipleinputs--active-mask {
+  display: inline-block;
+  width: 52px;
+}
+
+/* line 17, ../sass/nobossmultipleinputs.scss */
+div.nobossmultipleinputs__input:first-of-type {
+  padding-left: 0px;
+}

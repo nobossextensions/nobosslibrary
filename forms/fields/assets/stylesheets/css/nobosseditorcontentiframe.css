@@ -1,0 +1,11 @@
+/* Coloca em todos textos do editor o efeito de sombra 'zerado' como default */
+/* line 2, ../sass/nobosseditorcontentiframe.scss */
+body span {
+  text-shadow: 0px 0px;
+}
+
+/* Colocar efeito de sombra nos textos do editor que estiverem com a cor branca */
+/* line 7, ../sass/nobosseditorcontentiframe.scss */
+[data-mce-style*="#fff"] {
+  text-shadow: 1px 1px 1px #000;
+}

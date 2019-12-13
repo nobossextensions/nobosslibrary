@@ -1,0 +1,632 @@
+/* line 77, ../../../../../assets/util/stylesheets/sass/_loader.scss */
+.loader--side {
+  vertical-align: middle;
+  margin-left: 15px;
+  display: inline-block;
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 2, ../../../../../assets/util/stylesheets/sass/_nobossmodal.scss */
+.modal-confirm-responsive {
+  width: 400px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  /* line 7, ../../../../../assets/util/stylesheets/sass/_nobossmodal.scss */
+  .modal-confirm-responsive {
+    width: auto;
+    margin: 10px;
+  }
+}
+/* line 22, ../sass/nobossmodal.scss */
+.loader--fullpage {
+  animation: circle 1.4s infinite linear;
+  transform: translateZ(0);
+  border-radius: 50%;
+  background: #fff;
+  background: linear-gradient(to right, #fff 10%, rgba(255, 255, 255, 0) 42%);
+  height: 65px;
+  width: 65px;
+  position: fixed;
+  top: calc(50% - 65px/2);
+  left: calc(50% - 65px/2);
+  z-index: 1035;
+}
+/* line 19, ../../../../../assets/util/stylesheets/sass/_loader.scss */
+.loader--fullpage:before {
+  width: 50%;
+  height: 50%;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #fff;
+  display: block;
+}
+/* line 31, ../../../../../assets/util/stylesheets/sass/_loader.scss */
+.loader--fullpage:after {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #999;
+  display: block;
+}
+
+/* line 32, ../sass/nobossmodal.scss */
+.loader-message {
+  position: fixed;
+  top: calc(60%);
+  z-index: 1035;
+  text-align: center;
+  background: #dff0d8;
+  left: calc(40%);
+  right: calc(40%);
+  color: #3c763d;
+  border-radius: 4%;
+  border: 1px solid #faebcc;
+  border-radius: 3px;
+}
+
+/* line 48, ../sass/nobossmodal.scss */
+.loader--side {
+  animation: circle 1.4s infinite linear;
+  transform: translateZ(0);
+  border-radius: 50%;
+  background: #787878;
+  background: linear-gradient(to right, #787878 10%, rgba(255, 255, 255, 0) 42%);
+  height: 20px;
+  width: 20px;
+}
+/* line 19, ../../../../../assets/util/stylesheets/sass/_loader.scss */
+.loader--side:before {
+  width: 50%;
+  height: 50%;
+  border-radius: 100% 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background: #787878;
+  display: block;
+}
+/* line 31, ../../../../../assets/util/stylesheets/sass/_loader.scss */
+.loader--side:after {
+  width: 75%;
+  height: 75%;
+  border-radius: 50%;
+  content: '';
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  display: block;
+}
+
+/* line 57, ../sass/nobossmodal.scss */
+.loader-fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+/* line 61, ../sass/nobossmodal.scss */
+body.modal--is-open {
+  overflow: hidden;
+}
+/* line 63, ../sass/nobossmodal.scss */
+body.modal--is-open .noboss-modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: block;
+}
+
+/* line 70, ../sass/nobossmodal.scss */
+.noboss-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  outline: 0;
+}
+/* line 80, ../sass/nobossmodal.scss */
+.noboss-modal .alert {
+  word-break: break-word;
+}
+/* line 83, ../sass/nobossmodal.scss */
+.noboss-modal .fade .nb-modal-dialog {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -25%);
+}
+/* line 94, ../sass/nobossmodal.scss */
+.noboss-modal .in .nb-modal-dialog {
+  transform: translate(0, 0);
+}
+/* line 100, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-dialog {
+  height: calc(100% - 7vh);
+  width: calc(50vw + 220px);
+  margin: 3.5vh auto;
+  border-radius: 10px;
+}
+/* line 106, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-content {
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border-radius: 10px;
+  outline: 0;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+/* line 118, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header {
+  border-bottom: #eee solid 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 10px 20px;
+  position: relative;
+}
+/* line 124, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header h2 {
+  font-size: 1.25rem;
+  color: #212529;
+  font-weight: 500;
+}
+/* line 129, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .error {
+  background-color: #d9534f;
+}
+/* line 132, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .success {
+  background-color: #449d44;
+}
+/* line 135, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .info {
+  background-color: #6495ed;
+}
+/* line 138, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .error, .noboss-modal .nb-modal-header .success, .noboss-modal .nb-modal-header .info {
+  color: #fff;
+}
+/* line 140, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .error .btn-close, .noboss-modal .nb-modal-header .success .btn-close, .noboss-modal .nb-modal-header .info .btn-close {
+  color: white;
+}
+/* line 144, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .btn-close {
+  float: right;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: .5;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  background: none;
+  border: none;
+  border-left: 0;
+  box-shadow: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+/* line 162, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .btn-close:hover, .noboss-modal .nb-modal-header .btn-close:focus {
+  color: #000;
+  text-decoration: none;
+  opacity: .75;
+}
+/* line 167, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header .btn-close:focus {
+  outline: none;
+}
+/* line 171, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-header h2 {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+/* line 177, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-body {
+  box-sizing: border-box;
+  padding: 20px;
+  width: 100%;
+  height: 82%;
+  -ms-flex: 2;
+      flex: 2;
+  /*sobrescrevendo estilo do template p/ nao aparecer scroll sempre*/
+  overflow-y: auto !important;
+}
+/* line 187, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-body:after, .noboss-modal .nb-modal-body:before {
+  box-sizing: inherit;
+}
+/* line 192, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-body .modal-tab-pane {
+  display: none;
+}
+/* line 194, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-body .modal-tab-pane.active {
+  display: block;
+}
+/* line 199, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-footer {
+  text-align: right;
+  clear: both;
+  padding: 10px 15px;
+  margin-bottom: 0;
+  background-color: #f5f5f5;
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 6px 6px;
+  box-shadow: inset 0 1px 0 #fff;
+}
+/* line 209, ../sass/nobossmodal.scss */
+.noboss-modal .nb-modal-footer .btn-reset {
+  float: left;
+}
+
+/* line 217, ../sass/nobossmodal.scss */
+.noboss-modal--tabs ul, .noboss-modal--tabs ol {
+  padding: 0;
+  margin: 0 0 9px 25px;
+}
+/* line 221, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .buttons {
+  margin-left: 15px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+/* line 240, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .buttons.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+/* line 245, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .buttons.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+/* line 250, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .buttons.btn-danger {
+  color: #fff;
+  background-color: #e74c3c;
+  border-color: #d24536;
+}
+/* line 255, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .buttons.btn-danger:hover {
+  color: #fff;
+  background-color: #c0392b;
+  border-color: #bd2130;
+}
+/* line 262, ../sass/nobossmodal.scss */
+.noboss-modal--tabs a {
+  text-decoration: none;
+}
+/* line 265, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav {
+  margin-left: 0;
+  margin-bottom: 18px;
+  list-style: none;
+}
+/* line 271, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav > li > a {
+  display: block;
+}
+/* line 275, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav > li > a:hover,
+.noboss-modal--tabs .nav > li > a:focus {
+  text-decoration: none;
+  background-color: #eee;
+}
+/* line 281, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav > li > a > img {
+  max-width: none;
+}
+/* line 285, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav > .pull-right {
+  float: right;
+}
+/* line 289, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-header {
+  display: block;
+  padding: 3px 15px;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+/* line 300, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav li + .nav-header {
+  margin-top: 9px;
+}
+/* line 304, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-list {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 0;
+}
+/* line 310, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-list > li > a,
+.noboss-modal--tabs .nav-list .nav-header {
+  margin-left: -15px;
+  margin-right: -15px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+/* line 317, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-list > li > a {
+  padding: 3px 15px;
+}
+/* line 321, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-list > .active > a,
+.noboss-modal--tabs .nav-list > .active > a:hover,
+.noboss-modal--tabs .nav-list > .active > a:focus {
+  color: #fff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #3071a9;
+}
+/* line 329, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-list [class^="icon-"],
+.noboss-modal--tabs .nav-list [class*=" icon-"] {
+  margin-right: 2px;
+}
+/* line 334, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-list .divider {
+  *width: 100%;
+  height: 1px;
+  margin: 8px 1px;
+  *margin: -5px 0 5px;
+  overflow: hidden;
+  background-color: #e5e5e5;
+  border-bottom: 1px solid #fff;
+}
+/* line 344, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs,
+.noboss-modal--tabs .nav-pills {
+  *zoom: 1;
+}
+/* line 349, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs:before,
+.noboss-modal--tabs .nav-tabs:after,
+.noboss-modal--tabs .nav-pills:before,
+.noboss-modal--tabs .nav-pills:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 358, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs:after,
+.noboss-modal--tabs .nav-pills:after {
+  clear: both;
+}
+/* line 363, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs > li,
+.noboss-modal--tabs .nav-pills > li {
+  float: left;
+}
+/* line 368, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs > li > a,
+.noboss-modal--tabs .nav-pills > li > a {
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+/* line 376, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs {
+  border-bottom: 1px solid #ddd;
+}
+/* line 380, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs > li {
+  margin-bottom: -1px;
+}
+/* line 384, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 18px;
+  border: 1px solid transparent;
+  border-radius: 4px 4px 0 0;
+}
+/* line 394, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs > li > a:hover,
+.noboss-modal--tabs .nav-tabs > li > a:focus {
+  border-color: #eee #eee #ddd;
+}
+/* line 399, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs > .active > a,
+.noboss-modal--tabs .nav-tabs > .active > a:hover,
+.noboss-modal--tabs .nav-tabs > .active > a:focus {
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+  cursor: default;
+}
+/* line 409, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-pills > li > a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+/* line 419, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-pills > .active > a,
+.noboss-modal--tabs .nav-pills > .active > a:hover,
+.noboss-modal--tabs .nav-pills > .active > a:focus {
+  color: #fff;
+  background-color: #3071a9;
+}
+/* line 426, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-stacked > li {
+  float: none;
+}
+/* line 430, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-stacked > li > a {
+  margin-right: 0;
+}
+/* line 434, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs.nav-stacked {
+  border-bottom: 0;
+}
+/* line 438, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs.nav-stacked > li > a {
+  border: 1px solid #ddd;
+  border-radius: 0;
+}
+/* line 445, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs.nav-stacked > li:first-child > a {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+/* line 454, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs.nav-stacked > li:last-child > a {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+/* line 463, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs.nav-stacked > li > a:hover,
+.noboss-modal--tabs .nav-tabs.nav-stacked > li > a:focus {
+  border-color: #ddd;
+  z-index: 2;
+}
+/* line 469, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-pills.nav-stacked > li > a {
+  margin-bottom: 3px;
+}
+/* line 473, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-pills.nav-stacked > li:last-child > a {
+  margin-bottom: 1px;
+}
+/* line 477, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs .dropdown-menu {
+  border-radius: 0 0 6px 6px;
+}
+/* line 483, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-pills .dropdown-menu {
+  border-radius: 6px;
+}
+/* line 489, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav .dropdown-toggle .caret {
+  border-top-color: #3071a9;
+  border-bottom-color: #3071a9;
+  margin-top: 6px;
+}
+/* line 495, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav .dropdown-toggle:hover .caret,
+.noboss-modal--tabs .nav .dropdown-toggle:focus .caret {
+  border-top-color: #1f496e;
+  border-bottom-color: #1f496e;
+}
+/* line 501, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs .dropdown-toggle .caret {
+  margin-top: 8px;
+}
+/* line 505, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav .active .dropdown-toggle .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+/* line 510, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs .active .dropdown-toggle .caret {
+  border-top-color: #555;
+  border-bottom-color: #555;
+}
+/* line 515, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav > .dropdown.active > a:hover,
+.noboss-modal--tabs .nav > .dropdown.active > a:focus {
+  cursor: pointer;
+}
+/* line 520, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav-tabs .open .dropdown-toggle,
+.noboss-modal--tabs .nav-pills .open .dropdown-toggle,
+.noboss-modal--tabs .nav > li.dropdown.open.active > a:hover,
+.noboss-modal--tabs .nav > li.dropdown.open.active > a:focus {
+  color: #fff;
+  background-color: #999;
+  border-color: #999;
+}
+/* line 529, ../sass/nobossmodal.scss */
+.noboss-modal--tabs .nav li.dropdown.open .caret,
+.noboss-modal--tabs .nav li.dropdown.open.active .caret,
+.noboss-modal--tabs .nav li.dropdown.open a:hover .caret,
+.noboss-modal--tabs .nav li.dropdown.open a:focus .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+@media (max-width: 600px) {
+  /* line 543, ../sass/nobossmodal.scss */
+  .noboss-modal .nb-modal-dialog {
+    margin: 0;
+    height: 100%;
+    width: auto;
+  }
+  /* line 548, ../sass/nobossmodal.scss */
+  .noboss-modal .nb-modal-header, .noboss-modal .nb-modal-content, .noboss-modal .nb-modal-footer {
+    border-radius: unset;
+  }
+  /* line 551, ../sass/nobossmodal.scss */
+  .noboss-modal div.modal.fade.in {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* line 563, ../sass/nobossmodal.scss */
+#attrib-theme .controls .btn[disabled]:hover, #attrib-theme .controls .btn[disabled]:focus {
+  background: #f3f3f3;
+  color: #333;
+  outline: initial;
+}
